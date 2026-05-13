@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nearest odd number</title>
+</head>
+<body>
+<h2>Enter a number</h2>
+<input type="number" id="numinput">
+<button onclick="odd()">Get odd</button>
+<p id="result"></p>
+<script>
+function odd(){
+let num=parseInt(document.getElementById("numinput").value);
+let oddnum=(num%2==0)?(num-1):num;
+document.getElementById("result").innerText="nearest:"+oddnum;
+}
+</script>
+</body>
+</html>

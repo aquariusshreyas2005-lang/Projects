@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Bus Pass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+  <nav>
+    <a href="dashboard.html">Dashboard</a> |
+    <a href="history.html">History</a> |
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>🚌 Bus Pass Dashboard</h1>
+    <div class="user-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="avatar" alt="User Icon">
+      <p id="userWelcome"></p>
+    </div>
+
+    <form id="passForm">
+      <input type="text" id="name" placeholder="👤 Full Name" required>
+      <input type="text" id="id" placeholder="🆔 ID Number" required>
+      <select id="passType">
+        <option value="monthly">Monthly – $30</option>
+        <option value="quarterly">Quarterly – $80</option>
+      </select>
+      <button type="submit">💳 Issue/Renew Pass</button>
+    </form>
+
+    <h2>Your Bus Pass 📄</h2>
+    <div id="passList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
